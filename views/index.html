@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>tailwind-twind converter</title>
     <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
       .container {
         display: flex;
         flex-direction: column;
       }
       .container textarea {
+        /* font-family: 'Open Sans', sans-serif; */
         width: 100%;
         height: auto;
         border: 1px solid #ccc;
@@ -46,7 +58,8 @@
         height: 6rem;
       }
 
-      input {
+      .container input {
+        font-family: inherit;
         font-size: 1.5rem;
         letter-spacing: 1px;
         width: 100%;
